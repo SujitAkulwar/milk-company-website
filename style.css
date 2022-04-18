@@ -20,13 +20,12 @@ nav{
     align-items: center;
 }
 
-img{
-    size: 13 px;
-    
+nav img{
+    width: 50px;
 }
 
 .nav-links{
-    flex: 1;
+    flex:1;
     text-align: right;
 }
 
@@ -40,6 +39,28 @@ img{
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
-    padding: 8px,12px;
+    font-size: 16px;
 }
+
+.nav-links ul li::after{
+    content: '';
+    width: 00%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.25s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+    background: #00fbff;
+}
+
+#home{
+    padding:-100%,100%;
+    align-items: center;
+    color: #fff;
+}
+
+
+
