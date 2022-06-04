@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 .header{
@@ -10,11 +11,12 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(milk-2474993.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(milk-2474993.jpg);
 }
-
-nav{
+.nav{
     display: flex;
+}
+nav{
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
@@ -25,8 +27,8 @@ nav img{
 }
 
 .nav-links{
-    flex:1;
     text-align: right;
+    padding-left: 5vh;
 }
 
 .nav-links ul li{
@@ -34,12 +36,13 @@ nav img{
     display: inline-block;
     padding: 8px,12px;
     position: relative;
+    margin-left: 5vh;
 }
 
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .nav-links ul li::after{
@@ -61,6 +64,12 @@ nav img{
     align-items: center;
     color: #fff;
 }
-
-
-
+#home h1{
+    font-weight: 800;
+}
+#home{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 60vh;
+}
